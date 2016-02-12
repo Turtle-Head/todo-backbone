@@ -5,13 +5,13 @@ var app = app || {};
 // The Application
 
   // AppView is the top-level of the UI
-app.AppView = Backbone.view.extend({
+app.AppView = Backbone.View.extend({
 
     // Bind to the skeleton in the HTML
     el: '#todoapp',
 
     // the template for stats at the bottom of the page
-    statsTemplate: _.template( $('#stats-template').html() ),
+    statsTemplate: _.template($('#stats-template').html()),
 
     // Events for items
     events: {

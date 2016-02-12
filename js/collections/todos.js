@@ -11,7 +11,7 @@ var TodoList = Backbone.Collection.extend({
   model: app.Todo,
 
   // Save all of the todos under the "todos-backbone" namespace
-  localStorage: new Backbone.localStorage('todos-backbone'),
+  localStorage: new Backbone.LocalStorage('todos-backbone'),
 
   // Filter the todos for completed items
   // Returns items with completed = true
